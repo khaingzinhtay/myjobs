@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&family=Teko&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+    text-transform: capitalize;
+}
+:root{
+    --bg-color:orange;
+    --text-color:black;
+    --warning-color:palevioletred;
+    --primary-color:rgb(36, 36, 201);
+    --background: rgb(10, 10, 69);
+    --color:white;
+}
+.main-btn{
+    background: var(--bg-color);
+    border: none;
+    padding: 4px 30px;
+    font-size: 20px;
+    color: var(--color);
+    border-radius: 20px;
+}
+.main-but{
+    border: 1px solid var(--bg-color);
+    padding: 4px 20px;
+    background: var(--color);
+    border-radius: 20px;
+    font-size: 20px;
+}
+h1{
+    color: var(--bg-color);
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+p{
+    font-size: 19px;
+}
+/* header section starts */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--color);
+    z-index: 1000;
+}
+header .navbar-brand span{
+    font-size: 50px;
+    color: var(--bg-color);
+    font-weight: 700px;
+}
+header .navbar-brand sub{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+header #navbarNav .nav-link{
+    margin: 10px;
+    font-size: 20px;
+    color: var(--text-color);
+}
+header #navbarNav .nav-link.active{
+    color: var(--bg-color);
+}
+header .button i{
+    color: var(--bg-color);
+}
+header .button i,header .button span{
+    font-size: 20px;
+}
+/* header section ends */
+/* banner section starts */
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background: url(../myjobs-images/banners.png);
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+.banner h1{
+    color: var(--color);
+}
+/* banner section ends */
+/* text section starts */
+/* .text{
+    color: var(--text-color);
+    background: var(--background);
+    height: 200px;
+    width:100%;
+    position: relative;
+}
+.box{
+    background: var(--color);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    bottom: 20px;
+}
+.box input{
+    font-size: 20px;
+} */
+.text{
+    background: var(--background);
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.box{
+    position: relative;
+    top: 30px;
+    background-color: var(--color);
+    height: 70px;
+    padding: 15px;
+    border-radius: 20px;
+}
+.box a{
+    font-size: 20px;
+    border: none;
+    color:gray;
+}
+.box .dropdown-toggle{
+    font-size: 20px;
+}
+/* text section ends */
+/* jobs section starts */
+.jobs{
+    font-family: 'Teko', sans-serif;
+}
+.jobs .card{
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--background);
+    color: var(--color);
+}
+.jobs .card i{
+    font-size: 30px;
+    color: var(--bg-color);
+}
+/* jobs section ends */
+/* featured section starts */
+.featured .card{
+    padding: 30px;
+}
+.featured h4{
+    color: var(--bg-color);
+}
+.featured p{
+    font-family: 'Teko', sans-serif;
+}
+.featured span{
+    font-size: 19px;
+}
+.featured .card{
+    border: 1px solid var(--bg-color);
+    border-radius: 20px;
+}
+/* featured section ends */
+/* featured2 section starts */
+#featured{
+    background: #eee;
+    font-family: 'Play', sans-serif;
+}
+#featured .card{
+    padding: 20px;
+    border-radius: 30px;
+}
+#featured .card h4{
+    letter-spacing: 3px;
+}
+.head i{
+    width: 30px;
+    height: 30px;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color);
+    border-radius: 50%;
+}
+.head span{
+    font-size: 20px;
+}
+#head span{
+    font-size: 20px;
+}
+#featured .main-btn i{
+    font-size: 10px;
+}
+/* featured2 section ends */
+.background{
+    background-image: url(../myjobs-images/myjbos-ads.png);
+    width: 100%;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+/* love section starts */
+.love i{
+    background:rgb(212, 234, 212);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    border-radius: 10px;
+    color: var(--bg-color);
+    font-weight: bold;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+/* love section ends */
+/* candidates section starts */
+.candidates{
+    background: peachpuff;
+}
+.candidates .card{
+    padding: 30px;
+    border-radius: 30px;
+}
+.candidates .card img{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    object-fit: cover;
+}
+.candidates .card a{
+    color: var(--bg-color);
+    font-size: 20px;
+}
+.candidates .card a i{
+    font-size: 10px;
+}
+/* candidates section ends */
+/* introduction section starts */
+#introduction{
+    background: var(--background);
+    border-radius: 50px;
+}
+#introduction h2{
+    color: var(--color);
+    font-size: 70px;
+}
+#introduction h4{
+    color: var(--bg-color);
+    font-size: 30px;
+}
+#introduction ul li{
+    font-size: 25px;
+    color: var(--color);
+    list-style-type: circle;
+}
+/* introduction section ends */
+/* footer section starts */
+.footer{
+    background: rgb(198, 211, 198);
+    padding-top: 50px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+.footer h2{
+    color: var(--bg-color);
+    font-size: 50px;
+    font-weight: bold;
+}
+.footer sub{
+    color: var(--text-color);
+    font-size: 25px;
+}
+.footer article{
+    color: var(--bg-color);
+    font-size: 25px;
+    font-weight: 300px;
+}
+/* footer section ends */
+#footer{
+    background: var(--background);
+    color: var(--color);
+}
+.box1 h2{
+    background: var(--bg-color);
+    color: var(--color);
+    border-radius: 20px;
+    padding: 10px;
+}
+.box2 h2{
+    background: var(--background);
+    border-radius: 20px;
+    color: var(--color);
+    padding: 10px;
+}
+/* info section starts */
+.info h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.info p{
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+.info li{
+    font-size: 25px;
+}
+.info .main-btn i{
+    font-size: 15px;
+}
+.picture{
+    position: relative;
+}
+.info img{
+    position: absolute;
+    width: 400px;
+}
+.box3{
+    width: 400px;
+    height: 500px;
+    background: rgb(248, 245, 224);
+    margin-top: 100px;
+    margin-left: 60px;
+    border-radius: 20px;
+}
+.box4{
+    position:absolute;
+    left: 50%;
+    top: 20%;
+}
+.box5{
+    margin: 9px;
+    padding: 3px 100px 3px 20px;
+    background: var(--color);
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px #ddd;
+}
+.box5 span{
+    font-size: 30px;
+}
+.box5 p{
+    font-size: 30px;
+}
+/* info section ends */
+
+
+
+
+
+
+
+
+
+/* media query */
+@media(max-width:1239px){
+    .introduction img{
+        padding: 20px;
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-width:1199px){
+    header #navbarNav .nav-link{
+        margin: 0;
+    }
+    .love i{
+        margin-left: 200px;
+    }
+}
+@media(max-width:1930px){
+    .love i{
+        margin-right: 200px;
+    }
+}
+@media(max-width:1200px){
+    .box5{
+        margin: 9px;
+        padding: 9px 40px;
+        background: var(--color);
+        border-radius: 20px;
+        box-shadow: 1px 1px 1px #ddd;
+    }
+    .box5 span{
+        font-size: 20px;
+    }
+    .box5 p{
+        font-size: 20px;
+    }
+}
+@media(max-width:991px){
+    .text{
+        height: 300px;
+    }
+    .box{
+        height: 100px;
+    }
+}
+@media(max-width:768px){
+    .banner h1{
+        font-size: 30px;
+    }
+    .introduction img{
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+    .text{
+        height: 300px;
+    }
+    .box{
+        height: 200px;
+    }
+}
